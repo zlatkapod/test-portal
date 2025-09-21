@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Robotics Test Portal</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div id="logo">
+      <img src="/static/logo.jpg" alt="Portal Logo" width="180" height="52" style="display:block; max-width:100%; height:auto;" />
+    </div>
+    <h2>Categories</h2>
+    <ul id="category-list"></ul>
+  </aside>
+  <main id="main">
+    <header id="toolbar">
+      <label>
+        Mode:
+        <select id="mode-select">
+          <option value="flashcards">Flashcards</option>
+          <option value="test">Test</option>
+        </select>
+      </label>
+      <label id="test-config" style="display:none">
+        Questions per page:
+        <input type="number" id="qpp" min="1" max="50" value="5" />
+        <button id="load-test">Load</button>
+      </label>
+    </header>
+    <section id="content"></section>
+  </main>
+</div>
+<script src="/static/main.js"></script>
+</body>
+</html>

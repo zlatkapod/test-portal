@@ -1,0 +1,23 @@
+html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+#app { display: flex; height: 100%; }
+#sidebar { width: 280px; border-right: 1px solid #ddd; padding: 12px; box-sizing: border-box; overflow: auto; }
+#sidebar h2 { margin: 0 0 6px; font-size: 18px; }
+
+#logo {margin-bottom: 32px;}
+#logo img { display: block; max-width: 100%; height: auto;}
+#category-list { list-style: none; padding: 0; margin: 0}
+#category-list li { padding: 8px; border-radius: 6px; cursor: pointer; }
+#category-list li.active, #category-list li:hover { background: #f0f4ff; }
+#main { flex: 1; display: flex; flex-direction: column; }
+#toolbar { display: flex; gap: 16px; align-items: center; padding: 12px; border-bottom: 1px solid #eee; }
+#content { padding: 16px; overflow: auto; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; max-width: 800px; }
+.card .answer { margin-top: 12px; background: #f9f9f9; border-radius: 6px; padding: 12px; }
+.controls { margin-top: 12px; display: flex; gap: 8px; }
+.qa-item { border: 1px solid #eee; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.qa-item.correct { border-color: #3cb371; background: #f2fff6; }
+.qa-item.incorrect { border-color: #e57373; background: #fff5f5; }
+.qa-item .result { margin-top: 8px; font-weight: bold; }
+button { padding: 8px 12px; border: 1px solid #ccc; border-radius: 6px; background: #fff; cursor: pointer; }
+button:hover { background: #f7f7f7; }
+input[type="text"], input[type="number"] { padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; }
