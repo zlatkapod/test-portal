@@ -1,4 +1,4 @@
-# Robotics Test Portal
+# Test Portal
 
 A simple web portal to practice robotics topics using CSV-based Q&A decks. Categories are populated from CSV files in the `resources/` folder and rendered in a left sidebar. The main pane lets you practice with two modes: Flashcards and Test.
 
